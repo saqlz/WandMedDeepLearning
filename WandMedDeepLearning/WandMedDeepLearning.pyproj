@@ -25,6 +25,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ResNetModel.py" />
+    <Compile Include="RTStructure\ds_helper.py" />
+    <Compile Include="RTStructure\image_helper.py" />
+    <Compile Include="RTStructure\rtstruct.py" />
+    <Compile Include="RTStructure\rtstruct_builder.py" />
+    <Compile Include="RTStructure\utils.py" />
+    <Compile Include="RTStructure\__init__.py" />
+    <Compile Include="Test\conftest.py" />
+    <Compile Include="Test\test_ds_helper.py" />
+    <Compile Include="Test\test_rtstruct_builder.py" />
+    <Compile Include="Test\test_utils.py" />
+    <Compile Include="Test\__init__.py" />
     <Compile Include="UNetModel.py">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +54,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="RTStructure\README.md" />
+    <Content Include="Test\empty\dummy_rt.dcm" />
+    <Content Include="Test\mock_data\ct_1.dcm" />
+    <Content Include="Test\mock_data\ct_2.dcm" />
+    <Content Include="Test\mock_data\invalid_reference_rt.dcm" />
+    <Content Include="Test\mock_data\rt.dcm" />
+    <Content Include="Test\one_slice_data\0.dcm" />
+    <Content Include="Test\oriented_data\0.dcm" />
+    <Content Include="Test\oriented_data\1.dcm" />
+    <Content Include="Test\oriented_data\2.dcm" />
+    <Content Include="Test\oriented_data\info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+    <Folder Include="RTStructure\" />
+    <Folder Include="Test\empty\" />
+    <Folder Include="Test\mock_data\" />
+    <Folder Include="Test\one_slice_data\" />
+    <Folder Include="Test\oriented_data\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

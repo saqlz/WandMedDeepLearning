@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e0c59210-34f3-4ecb-bd17-d32043bf302c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WandMedDeepLearning.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,6 +13,7 @@
     <Name>WandMedDeepLearning</Name>
     <RootNamespace>WandMedDeepLearning</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +24,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ResNetModel.py" />
+    <Compile Include="UNetModel.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="WandMedDeepLearning.py" />
   </ItemGroup>
   <ItemGroup>

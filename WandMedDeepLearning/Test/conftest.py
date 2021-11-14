@@ -1,7 +1,7 @@
-from rt_utils.rtstruct import RTStruct
+from RTStructure.rtstruct import RTStruct
 import pytest
 import os
-from rt_utils import RTStructBuilder
+from RTStructure import RTStructBuilder
 
 @pytest.fixture()
 def series_path() -> str:

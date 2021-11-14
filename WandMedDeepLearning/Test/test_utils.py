@@ -1,7 +1,7 @@
 import pytest
 
-from rt_utils.utils import COLOR_PALETTE
-from tests.test_rtstruct_builder import get_empty_mask
+from RTStructure.utils import COLOR_PALETTE
+from Test.test_rtstruct_builder import get_empty_mask
 
 
 VALID_COLORS = [

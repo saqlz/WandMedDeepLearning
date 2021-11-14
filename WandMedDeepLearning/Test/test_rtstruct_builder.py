@@ -1,9 +1,9 @@
-from rt_utils.rtstruct import RTStruct
+from RTStructure.rtstruct import RTStruct
 import pytest
 import os
-from rt_utils import RTStructBuilder
-from rt_utils.utils import SOPClassUID
-from rt_utils import image_helper
+from RTStructure import RTStructBuilder
+from RTStructure.utils import SOPClassUID
+from RTStructure import image_helper
 from pydicom.dataset import validate_file_meta
 import numpy as np
 

@@ -1,11 +1,12 @@
 import datetime
-from rt_utils.image_helper import get_contours_coords
-from rt_utils.utils import ROIData, SOPClassUID
 import numpy as np
 from pydicom.uid import generate_uid
 from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
 from pydicom.sequence import Sequence
 from pydicom.uid import ImplicitVRLittleEndian
+
+from RTStructure.image_helper import get_contours_coords
+from RTStructure.utils import ROIData, SOPClassUID
 
 """
 File contains helper methods that handles DICOM header creation/formatting

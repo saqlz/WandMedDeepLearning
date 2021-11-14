@@ -2,10 +2,10 @@ from typing import List
 from pydicom.dataset import Dataset
 from pydicom.filereader import dcmread
 
-from rt_utils.utils import SOPClassUID
-from . import ds_helper, image_helper
-from .rtstruct import RTStruct
-
+from RTStructure.utils import SOPClassUID
+from RTStructure.rtstruct import RTStruct
+import RTStructure.ds_helper as ds_helper
+import RTStructure.image_helper as image_helper
 
 class RTStructBuilder:
     """

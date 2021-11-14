@@ -1,2 +1,2 @@
-from .rtstruct import RTStruct
-from .rtstruct_builder import RTStructBuilder
+from RTStructure.rtstruct import RTStruct
+from RTStructure.rtstruct_builder import RTStructBuilder

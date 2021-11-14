@@ -1,5 +1,5 @@
 import pytest
-from rt_utils import ds_helper, image_helper
+from RTStructure import ds_helper, image_helper
 
 def test_correctly_acquire_optional_ds_field(series_path):
     series_data = image_helper.load_sorted_image_series(series_path)

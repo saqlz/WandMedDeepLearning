@@ -8,7 +8,7 @@ from pydicom import dcmread
 from pydicom.dataset import Dataset
 from pydicom.sequence import Sequence
 
-from rt_utils.utils import ROIData, SOPClassUID
+from RTStructure.utils import ROIData, SOPClassUID
 
 
 def load_sorted_image_series(dicom_series_path: str):

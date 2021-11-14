@@ -3,8 +3,9 @@ from typing import List, Union
 import numpy as np
 from pydicom.dataset import FileDataset
 
-from rt_utils.utils import ROIData
-from . import ds_helper, image_helper
+from RTStructure.utils import ROIData
+import RTStructure.ds_helper as ds_helper
+import RTStructure.image_helper as image_helper
 
 
 class RTStruct:
